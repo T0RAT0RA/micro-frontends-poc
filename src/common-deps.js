@@ -15,6 +15,7 @@ function insertNewImportMap(newMapJSON) {
 const devDependencies = {
   imports: {
     'single-spa': 'https://unpkg.com/single-spa@4.3.2/lib/umd/single-spa.min.js',
+    'buefy': 'https://unpkg.com/buefy/dist/buefy.min.js',
   }
 }
 

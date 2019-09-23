@@ -1,5 +1,5 @@
 <template>
-    <div class="header">HEADER</div>
+    <div class="header"></div>
 </template>
 
 <style scoped>

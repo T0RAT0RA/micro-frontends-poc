@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-all": "npm run install:config && npm run install:sidebar && npm run install:header",
+    "install-all": "npm run install:config && npm run install:sidebar && npm run install:header && npm run install:clients && npm run install:accounting ",
     "install:config": "npm i",
     "install:sidebar": "cd ./sidebar/ && npm i",
     "install:header": "cd ./header/ && npm i",
-    "start": "concurrently --kill-others --kill-others-on-fail -p name --names \"config,common-deps,sidebar,header\" \"npm run start:config\" \"npm run start:common-deps\" \"npm run start:sidebar\" \"npm run start:header\"",
+    "install:clients": "cd ./clients/ && npm i",
+    "install:accounting": "cd ./accounting/ && npm i",
+    "start": "concurrently --kill-others --kill-others-on-fail -p name --names \"config,common-deps,sidebar,header,clients,accounting\" \"npm run start:config\" \"npm run start:common-deps\" \"npm run start:sidebar\" \"npm run start:header\" \"npm run start:clients\" \"npm run start:accounting\"",
     "start:config": "webpack-dev-server --config ./webpack.config.config.dev.js --port 8080",
     "start:common-deps": "webpack-dev-server --config ./webpack.common-deps.config.dev.js --port 8081",
     "start:sidebar": "cd ./sidebar/ && webpack-dev-server --config ./webpack.dev.js --port 8082",
-    "start:header": "cd ./header/ && webpack-dev-server --config ./webpack.dev.js --port 8083"
+    "start:header": "cd ./header/ && webpack-dev-server --config ./webpack.dev.js --port 8083",
+    "start:clients": "cd ./clients/ && webpack-dev-server --config ./webpack.dev.js --port 8084",
+    "start:accounting": "cd ./accounting/ && webpack-dev-server --config ./webpack.dev.js --port 8085"
   },
   "repository": {
     "type": "git",
@@ -26,8 +30,8 @@
   "homepage": "https://github.com/T0RAT0RA/micro-frontends-poc#readme",
   "dependencies": {
     "single-spa": "^4.4.1",
-    "vue": "^2.6.10",
-    "single-spa-vue": "^1.5.4"
+    "single-spa-vue": "^1.5.4",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",

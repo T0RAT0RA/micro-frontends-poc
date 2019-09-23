@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   --primary: #011627;
-  --background: #182B3A;
+  --background: #FFFFFF;
   --white: #FDFFFC;
   --black: #171817;
   --gray: #8B8C8A;
@@ -11,7 +11,7 @@ body {
   --white-overlay: rgba(253, 255, 252, 0.8);
   background-color: var(--background);
   font-family: 'Roboto', sans-serif;
-  color: var(--white);
+  color: var(--black);
   --navbar-height: 60px;
 }
 
