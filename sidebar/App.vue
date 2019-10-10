@@ -5,11 +5,14 @@
             </div>
             <div class="links">
                 <a href="#/clients">Clients</a>
+                <a href="#/accounting">Accounting</a>
             </div>
         </div>
         <div class="content">
             <div id="header"></div>
-            <div id="main-app"></div>
+            <div id="main-app">
+                <div></div>
+            </div>
         </div>
     </div>
 </template>

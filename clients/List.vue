@@ -24,6 +24,7 @@ export default {
 
 <template>
     <div>
+        CLIENT LIST:
         <ul>
             <li v-for="client in clients" :key="client.id">
                 <router-link :to="{ name: 'client', params: { id: client.id }}">{{ client.name }}</router-link>

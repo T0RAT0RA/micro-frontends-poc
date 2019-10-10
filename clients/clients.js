@@ -48,7 +48,7 @@ const vueLifecycles = singleSpaVue({
   appOptions: {
     render: (h) => h(App),
     router,
-    el: "#main-app", // TODO: compute at runtime
+    el: "#main-app div", // TODO: compute at runtime
   },
 });
 

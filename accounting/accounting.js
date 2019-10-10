@@ -1,15 +1,30 @@
 import Vue from 'vue';
+import VueRouter from 'vue-router';
 import singleSpaVue from 'single-spa-vue';
 import App from './App.vue';
 
 
 Vue.config.productionTip = false;
 
+
+Vue.use(VueRouter);
+
+const routes = [
+  {
+    path: '/accounting',
+    component: App,
+  },
+]
+const router = new VueRouter({
+  routes
+})
+
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
     render: (h) => h(App),
     router,
+    el: "#main-app div", // TODO: compute at runtime
   },
 });
 

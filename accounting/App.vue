@@ -6,6 +6,6 @@ export default {
 
 <template>
     <div>
-        ACCOUNTING - CLIENT {{ clientId }}
+        ACCOUNTING
     </div>
 </template>

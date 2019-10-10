@@ -17,3 +17,7 @@ export function header(location) {
 export function clients(location) {
   return prefix(location, 'clients')
 }
+
+export function accounting(location) {
+  return prefix(location, 'accounting')
+}
