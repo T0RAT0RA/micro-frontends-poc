@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/T0RAT0RA/micro-frontends-poc#readme",
   "dependencies": {
+    "buefy": "^0.9.4",
     "single-spa": "^4.4.1",
     "single-spa-vue": "^1.5.4",
     "vue": "^2.6.10"
@@ -44,6 +45,6 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-dev-server": "^3.11.2"
   }
 }

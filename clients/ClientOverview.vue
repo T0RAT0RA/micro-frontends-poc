@@ -1,11 +1,12 @@
 <script>
 export default {
-    props: ['clientId'],
+  props: ['id'],
+
 }
 </script>
 
 <template>
-    <div>
-        ACCOUNTING MODULE
+    <div class="">
+        OVERVIEW {{ id }}
     </div>
 </template>

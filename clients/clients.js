@@ -3,8 +3,15 @@ import VueRouter from 'vue-router';
 // import { AddClientAccountingParcel } from '@app/accounting';
 import App from './App.vue';
 import List from './List.vue';
+import ClientTabs from './ClientTabs.vue';
+import ClientOverview from './ClientOverview.vue';
 // import router from './router';
 import singleSpaVue from 'single-spa-vue';
+
+import Buefy from 'buefy';
+import 'buefy/dist/buefy.css';
+
+Vue.use(Buefy);
 
 Vue.use(VueRouter);
 
@@ -20,7 +27,15 @@ const routes = [
       {
         path: ':id',
         name: 'client',
-        component: { template: '<div>CLIENT {{ $route.params.id }}</div>' },
+        component: ClientTabs,
+        children: [
+          {
+            path: 'overview',
+            name: 'client-overview',
+            component: ClientOverview,
+            props: true,
+          },
+        ]
       },
       // TODO: Pacel experiment
       // {

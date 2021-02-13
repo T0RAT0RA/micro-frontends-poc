@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "@apps/config": "http://localhost:8080/config.js",
+    "@apps/sidebar": "http://localhost:8082/sidebar.js",
+    "@apps/header": "http://localhost:8083/header.js",
+    "@apps/clients": "http://localhost:8084/clients.js",
+    "@apps/accounting": "http://localhost:8085/accounting.js"
+  }
+}

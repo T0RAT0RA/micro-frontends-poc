@@ -17,19 +17,21 @@ export default {
                 name: 'Star Lord',
             },
         ]
-    }    
+    }
 }
 </script>
 
 
 <template>
     <div>
-        CLIENT LIST:
-        <ul>
-            <li v-for="client in clients" :key="client.id">
-                <router-link :to="{ name: 'client', params: { id: client.id }}">{{ client.name }}</router-link>
-            </li>
-        </ul>
+        <table>
+            <tr>
+                <th>Client</th>
+            </tr>
+            <tr v-for="client in clients" :key="client.id">
+                <td><router-link :to="{ name: 'client-overview', params: { id: client.id }}">{{ client.name }}</router-link></td>
+            </tr>
+        </table>
     </div>
 </template>
 

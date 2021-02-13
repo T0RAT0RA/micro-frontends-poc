@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "@apps/config": "/config.js",
+    "@apps/sidebar": "/sidebar.js",
+    "@apps/header": "/header.js",
+    "@apps/clients": "/clients.js",
+    "@apps/accounting": "/accounting.js"
+  }
+}
